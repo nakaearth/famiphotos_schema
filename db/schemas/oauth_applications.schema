@@ -1,4 +1,4 @@
-create_table "oauth_applications", id: false, force: :cascade do |t|
+create_table "oauth_applications", id: false, force: true, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC" do |t|
   t.string   "name",         limit: 255,                null: false
   t.string   "uid",          limit: 255,                null: false
   t.string   "secret",       limit: 255,                null: false
